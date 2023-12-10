@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Close Window Example</title>
+    <hi> Send ₱35.00? </hi>
+    <style>
+        body {
+            background-image: url('cheese burger.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+        }
+
+        .content {
+            text-align: left;
+            margin-left: 20px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        button {
+            background-color: #3836ac;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #d8db0a;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showAlert()">confirm</button>
+
+    <script>
+        function showAlert() {
+            alert("BES has ₱100.00 tax(minimum), proceed payment?");
+            window.location.href = 'receipt.html';
+        }
+    </script>
+</body>
+</html>
